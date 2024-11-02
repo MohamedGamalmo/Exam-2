@@ -1,0 +1,280 @@
+
+  body{
+    background-color: black;
+  }
+#search::placeholder{
+  color: rgba(241, 224, 224, 0.189);
+}
+
+  /* start nav */
+nav
+{
+    width: 60px;
+    background-color: #f8f6f6;
+    z-index: 999999;
+    transition: all 0.7s;
+}
+nav .nav-logo
+{
+  margin-left: 3px;
+    padding: 25px 0px 0 4px ;
+    width: 38px ;
+    height: 10px;
+}
+nav .nav-logo img
+{
+    height: 48px;
+}
+nav .nav-menu
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+nav .nav-menu i 
+{
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+}
+nav .nav-social
+{
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nav-social i
+{
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+.nav-content{
+    margin-left: 0px;
+    
+}
+
+.side-nav
+{
+	background-color: #000;
+	width: 250px; ;
+	z-index: 99999;
+	padding: 0 30px;
+	margin-left: -250px;
+    /* overflow: hidden; */
+	transition: all 0.7s;
+}
+a{
+  text-decoration: none;
+}
+#btn{
+  display: block;
+}
+#btn2{
+  display: none;
+}
+
+.menu ul
+{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 300px;
+    /* display: none; */
+}
+
+.menu ul li
+{
+    padding-top: 25px ;
+}
+.menu ul li a
+{
+    color: #f9f6f6!important;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.menu ul li a:hover
+{
+    color: #ff655c!important;
+}
+.copyrights
+{
+    position: absolute;
+    bottom: 30px;
+    left: 20px;
+}
+.copyrights p
+{
+    color: rgb(153, 153, 153)!important;
+}
+.rights-social a
+{
+    color: #f9f6f6;
+    padding-left: 15px;
+    font-size: 14px;
+}
+
+.mation-ul{
+  display: none;
+}
+  /* end nav */
+
+/* home */
+img{
+  width: 100%;
+  display: block;
+}
+.image{
+  transition: all 1s;
+}
+
+.items{
+  margin-top: 100px;
+  overflow: hidden;
+  transition: all 1s;
+
+}
+.items:hover .image{
+  /* transform: scale(1.4); */
+  /* transform: translateX(100deg); */
+  transform: matrix(0.866,0.1,-0.1,0.866,0,0);
+  opacity: 0.5;
+}
+.image2{
+  transition: all 1s;
+}
+.items:hover .image2{
+    transform: scale(1.5);
+
+}
+
+
+.layer h1 {
+  transform: translateY(-100px);
+  transition: all 0.5s;
+}
+.items:hover .layer h1{
+  opacity: 1;
+  transform: translateY(0);
+
+}
+
+.layer p {
+ opacity: 0;
+  transition: all 1s;
+  transform: rotateX(60deg);
+
+}
+.items:hover .layer p{
+  opacity: 1;
+  transform: rotateX(0);
+}
+.layer .up  {
+  opacity: 0;
+  transform: translateY(700px);
+  transition: all 1s;
+}
+.items:hover .layer .up {
+  opacity: 1;
+  transform: translateY(0);
+
+}
+.layer .rate{
+  margin: 30px 0 0 5px;
+  font-size: 30px;
+  padding: 10px;
+  border: 2px solid green;
+  border-radius: 100px;
+  /* opacity: 0;
+  transform: translateY(700px);
+  transition: all 1s; */
+}
+/* .items:hover .layer .rate {
+  opacity: 1;
+  transform: translateY(0);
+} */
+/* end home */
+
+/* start contact */
+.form-control:focus{
+  border-color: #000;
+  box-shadow: none;
+  border-bottom: #000;
+  border-bottom: 1px solid white;
+  background-color: #000;
+  color: white;
+
+}
+/* start loading */
+.loading{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 1999999;
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  /* display: inline-block; */
+  position: absolute;
+  display: flex;
+  margin:380px;
+  margin-left: 700px;
+  border: 2px solid #FF3D00;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';  
+  box-sizing: border-box;
+  position: absolute;
+  left: 4px;
+  top: 4px;
+  border: 2px solid #FFF;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+    
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} 
+
+/* end loading */
+.forms{
+  background-color: #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid white;
+  color: white;
+  text-align: left;
+}
+.forms::placeholder{
+  text-align: center;
+  color: rgb(94, 94, 94);
+}
+.btn:hover{
+  color: black;
+  background-color: white;
+}
+.eye{
+  margin-top: 2px;
+  /* padding: 1px; */
+  position: absolute;
+  right: 1px;
+  display: none;
+}
+
+/* end contact */

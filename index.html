@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+<!--start navbar -->
+    <nav class="nav-content position-fixed top-0 start-0 vh-100 text-center ">
+        <div class="nav-logo">
+            <img src="images/mealify.png" class="w" alt="">
+        </div>
+        <div class="nav-menu text-center button-nav">
+            <i id="btn" class="fa-solid fa-align-justify"></i>
+            <i id="btn2" class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="nav-social">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </nav>
+
+
+    <div class="side-nav position-fixed top-0 start-0 vh-100">
+        <div id="nav" class="menu">
+            <ul class="mation-ul">
+                <li><a id="playing" href="#home" >Now playing</a></li>
+                <li><a id="popular">Popular</a></li>
+                <li><a id="topRated">Top Rated</a></li>
+                <li><a id="trending">Trending</a></li>
+                <li><a id="upcoming">Upcoming</a></li>
+                <li><a href="#contact" section="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="copyrights">
+            <div class="rights-social">
+                <a target="blank" href="www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                <a target="blank" href="www.twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                <a target="blank" href="www.globe.com"><i class="fa-solid fa-globe"></i></a>
+            </div>
+            <p class="pt-3">Copyright © 2022 All Rights Reserved. <br>Created by 
+                <span style="color: red;">mohamed gamal</span></p>
+        </div>
+    </div>
+<!-- end navbar -->
+
+<div class="loading position-absolute top-0 start-0 end-0 bottom-0 bg-dark overflow-hidden d-none">
+    <span class="loader"></span>
+</div>
+
+
+<!--start search -->
+    <input id="search" type="search" placeholder="Search"
+        class="mt-5 form-control w-50 mx-auto bg-transparent rounded-pill text-white border-2 border-white p-2">
+<!--end search -->
+
+
+<!--start home -->
+
+    <div id="home" class="container content p-3 ">
+        <div class="row">
+            
+            <!-- <div class="col-4">
+                <div class="items position-relative text-white">
+                    <div class="image2">
+                        <img class="image" src="images/mealify (2).jpg" alt="images">
+                    </div>
+                    <div class="layer  position-absolute top-0">
+                        <h1 class=" ps-1l"> ssssssssss</h1><br>
+                        <p class=" ps-1 "> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, nemo?</p>
+                        <h6>Relese Date:</h6>
+                        <span class="rateStars"></span>
+                        <span class="rate"></span>
+                    </div>
+                </div>
+
+            </div> -->
+        </div>
+    </div>
+<!--end home -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!--start contact -->
+   <div id="contact" class="contact container my-5 text-white">
+    <h1>Contact Us</h1>
+    <div class="container my-5 ">
+        <div class="row">
+            <div class="col-6">
+                <div class="inputs">
+                    <input oninput="cheekValidation2(this)" id="signinName" class="p-3 ms-2 forms form-control rounded-0  is-invalid" type="text" placeholder="Enter Your Name">
+                <span  class="cheek p-2 d-none text-danger">invalid name only charcter </span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="inputs">
+                    <input oninput="cheekValidation2(this)" id="signinemail" class="p-3 ms-2 forms form-control rounded-0  is-invalid" type="email" placeholder="Enter Your Email">
+                    <span  class="cheek p-2 d-none text-danger">invalid email try example@domain.com </span>
+                    
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="inputs">
+                    <input oninput="cheekValidation2(this)" id="phone" class="p-3 ms-2 forms form-control rounded-0 is-invalid" type="tel" placeholder="Enter Your Phone">
+                <span  class="p-2 d-none text-danger">invalid Number only numbers </span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="inputs">
+                    <input oninput="cheekValidation2(this)" id="age" class="p-3 ms-2 forms form-control rounded-0  is-invalid" type="number" placeholder="Enter Your Age">
+                <span  class="p-2 d-none text-danger">invalid up to 16 </span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="inputs position-relative pass">
+                    <input oninput="cheekValidation2(this)" id="signinPassword" class="pass2 p-3 ms-2 forms form-control rounded-0  is-invalid" type="password" placeholder="Enter Your Password">
+                    <i class="eye fa-solid fa-eye-slash"></i>
+                <span  class="p-2 d-none text-danger">invalid password password must contain number ,char </span>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="inputs">
+                    <input oninput="cheekValidation2(this)" class="p-3 ms-2 forms form-control rounded-0 " type="password" placeholder="ReEnter Password">
+                <span  class="p-2 d-none text-danger">password not match</span>
+                </div>
+            </div>
+        </div>
+        <button type="submit" class="bbbb mt-3 btn btn-dark p-2">Submit</button>
+    </div>    
+</div>
+
+<!--end contact -->
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
